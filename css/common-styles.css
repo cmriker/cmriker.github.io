@@ -16,7 +16,7 @@ body {
     background-size: cover;
     overflow: hidden;
 }
-
+/*
 body {
     font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
@@ -31,7 +31,7 @@ a {
 a:hover,
 a:focus {
     color: #eb3812;
-}
+}*/
 
 h1{
     font-size: 10em;
