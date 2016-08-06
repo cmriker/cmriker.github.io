@@ -54,11 +54,12 @@ h6 {
     padding-top: 10%;
 }
 
-.landing {
+/*.landing {
     width: 100%;
     height: 53.5%;
     background-color: rgba(255, 255, 255, 0.8);
-    /*-moz-box-shadow: 5px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px rgba(0,0,0,0.5);
     -webkit-box-shadow: 5px 5px rgba(0,0,0,0.5);
-    box-shadow: 5px 5px rgba(0,0,0,0.5);*/
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
 }
+*/
