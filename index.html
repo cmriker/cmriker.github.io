@@ -20,11 +20,22 @@
 
 <body>
     <div class="landing">
-        <div id="coming-soon"></div>
+        <div id="coming-soon" onclick="onClick()"></div>
     </div>
 
     <script>
-        new Vivus('coming-soon', {file: 'img/ComingSoon.svg', start: 'autostart', duration: 100});
+        var soon = new Vivus('coming-soon', {file: 'img/ComingSoon.svg', start: 'autostart', duration: 100});
+        var forward = false;
+
+        function onClick() {
+            if (!forward) {
+                soon.play(-1);
+                forward = true;
+            } else {
+                soon.play();
+                forward = false;
+            }
+        };
     </script>
 
     <script src="js/jquery.js"></script>
