@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'London Fill';
+	src: url("../fonts/London Fill.ttf");
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -8,9 +13,18 @@ body {
 	color: #3a3a3a;
 	min-height: 100vh;
 	margin: 0;
+    overflow: hidden;
 }
 
-svg {
+h1 {
+	color: #fff;
+    font-family: 'London Fill', serif;
+    font-size: 250px;
+    margin: auto;
+    word-wrap: break-word;
+}
+
+object {
 	margin: auto;
 	width: 66.6%;
 	height: 66.6%;
@@ -79,6 +93,10 @@ svg {
 	opacity: 1;
 	transform: translateY(-100%);
 	transition:all 0.4s;
+}
+
+a {
+	color: #3a3a3a;
 }
 
 a:visited {
