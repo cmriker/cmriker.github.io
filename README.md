@@ -1,7 +1,3 @@
-# [Colleen Riker](http://colleenriker.com/) 
+# colleenriker.com
 
-## Thanks to:
-[Vivus](https://maxwellito.github.io/vivus/)
-[Bootstrap](http://getbootstrap.com/)
-
-## More Info Coming Soon
+*a currently much-neglected personal site to showcase projects*
