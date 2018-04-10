@@ -8,38 +8,46 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-
     <title>Colleen Riker - Design + Code</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <link rel="stylesheet" href="css/common-styles.css" type="text/css">
-
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" 
+        integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" 
+        crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="landing">
-        <div id="coming-soon" onclick="onClick()"></div>
+    <div id="landing">
+        <div id="hello">
+            <svg
+                xmlns="http://www.w3.org/2000/svg" 
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <image 
+                    href="img/hello.svg" 
+                    height="100%" 
+                    width="100%"/>    
+            </svg>
+        </div>
+        <div class="scroll-down-container">
+            <a class="scroll-arrow-link" href="#about">
+                <i class="fas fa-angle-down scroll-arrow"></i>
+            </a>
+            <a href="#about">scroll down</a>
+        </div>
     </div>
-
-    <script src="//cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
-    <script>
-        var soon = new Vivus('coming-soon', {file: 'img/ComingSoon.svg', start: 'autostart', duration: 100});
-        var forward = false;
-
-        function onClick() {
-            if (!forward) {
-                soon.play(-1);
-                forward = true;
-            } else {
-                soon.play();
-                forward = false;
-            }
-        };
-    </script>
-
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <div id="about">
+        <div id="coming-soon">
+            <svg
+                xmlns="http://www.w3.org/2000/svg" 
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <image 
+                    href="img/coming_soon.svg" 
+                    height="100%" 
+                    width="100%"/>    
+            </svg>
+        </div>
+    </div>
 </body>
 
 </html>
