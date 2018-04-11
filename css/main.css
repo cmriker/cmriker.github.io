@@ -1,6 +1,13 @@
+@import 'animation.css';
+
 @font-face {
 	font-family: 'London Fill';
 	src: url("../fonts/London Fill.ttf");
+}
+
+@font-face {
+	font-family: 'London';
+	src: url("../fonts/London.ttf");
 }
 
 html {
@@ -9,18 +16,20 @@ html {
 
 body {
 	font-family: 'helvetica neue', sans-serif;
-	font-size: 12px;
+	font-size: 24px;
 	color: #3a3a3a;
 	min-height: 100vh;
 	margin: 0;
 }
 
-h1 {
+#hello > h1 {
 	color: #fff;
     font-family: 'London Fill', serif;
     font-size: 250px;
     font-weight: lighter;
+    line-height: 0.75em;
     margin: auto;
+    width: 300px;
     word-wrap: break-word;
 }
 
@@ -43,7 +52,7 @@ object {
 
 #hello {
 	display: flex;
-	flex-start: right;
+	flex-direction: row-reverse;
 	align-items: center;
 	width: 40%;
 	height: 100%;
@@ -75,28 +84,12 @@ object {
     margin: auto;
 }
 
-.scroll-arrow-link {
-	display: block;
-	transform: translateY(100%);
-}
-
-.scroll-down-container > a:not(.scroll-arrow-link) {
-    text-decoration: none;
-	display: block;
-	transform: translateY(-80%);
-	transition:all 0.2s;
-	opacity: 0;
-}
-
-.scroll-arrow-link:hover + a {
-	bottom: 2em;
-	opacity: 1;
-	transform: translateY(-100%);
-	transition:all 0.4s;
-}
-
 a {
 	color: #3a3a3a;
+}
+
+a.scroll-link {
+    font-size: 24px;
 }
 
 a:visited {
