@@ -1,13 +1,13 @@
 .scroll-arrow-link {
 	display: block;
-	transform: translateY(0.5em);
+	transform: translateY(1em);
 	transition:all 0.2s;
 }
 
 .scroll-down-container > a:not(.scroll-arrow-link) {
     text-decoration: none;
 	display: block;
-    transform: translateY(-2.4em);
+    transform: translateY(-1.4em);
 	transition:all 0.2s;
 	opacity: 0;
 }

@@ -1,13 +1,8 @@
 @import 'animation.css';
 
 @font-face {
-	font-family: 'London Fill';
-	src: url("../fonts/London Fill.ttf");
-}
-
-@font-face {
-	font-family: 'London';
-	src: url("../fonts/London.ttf");
+	font-family: 'Spinwerad';
+	src: url("../fonts/spinwerad.ttf");
 }
 
 html {
@@ -15,34 +10,27 @@ html {
 }
 
 body {
-	font-family: 'helvetica neue', sans-serif;
+	font-family: 'spinwerad', 'helvetica neue', sans-serif;
 	font-size: 24px;
 	color: #3a3a3a;
 	min-height: 100vh;
 	margin: 0;
 }
 
-#hello > h1 {
-	color: #fff;
-    font-family: 'London Fill', serif;
-    font-size: 250px;
-    font-weight: lighter;
-    line-height: 0.75em;
+svg {
     margin: auto;
-    width: 300px;
-    word-wrap: break-word;
-}
-
-object {
-	margin: auto;
-	width: 66.6%;
-	height: 66.6%;
+    min-width: 60%;
+    max-width: 100%;
+    height: 100%;
 }
 
 #landing {
-	background-size: cover;
-	background: url('../img/landing_page.jpg') no-repeat fixed center;
-	display: flex;
+    background-image: url(../img/landing_page.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
     flex-direction: row-reverse;
     height: 100vh;
 }
@@ -57,15 +45,57 @@ object {
 
 #about {
 	display: flex;
+    flex-direction: column;
 	height: 100vh;
 	align-items: center;
 	background: #fff;
 }
 
-#coming-soon {
-	display: flex;
-	height: 100%;
-	width: 100%;
+.about-me {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.about-me > h1 {
+    font-size: 4em;
+    margin: 0.25em;
+}
+
+.about-me > h3 {
+    margin: 0.25em;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2em;
+    width: 100vw;
+}
+
+.skills > div {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    background: #3a3a3a;
+    font-size: 3em;
+    color: #fff;
+}
+
+.skills > div > i {
+    margin: auto;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+	height: 100vh;
+	align-items: center;
+    height: 100vh;
+    background: #3a3a3a;
 }
 
 .scroll-down-container {
