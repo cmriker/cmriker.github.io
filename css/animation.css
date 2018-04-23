@@ -7,7 +7,7 @@
 .scroll-down-container > a:not(.scroll-arrow-link) {
     text-decoration: none;
 	display: block;
-    transform: translateY(-1.4em);
+    transform: translateY(-3em);
 	transition:all 0.2s;
 	opacity: 0;
 }
@@ -18,7 +18,7 @@
 }
 
 .scroll-arrow-link:hover + a {
-	bottom: 2em;
+	transform: translateY(-3.5em);
 	opacity: 1;
 	transition:all 0.4s;
 }
