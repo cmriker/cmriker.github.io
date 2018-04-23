@@ -22,3 +22,25 @@
 	opacity: 1;
 	transition:all 0.4s;
 }
+
+.web-text, .mobile-text, .api-text {
+	opacity: 0;
+    transform: translateY(-1em);
+	transition:all 0.2s;
+}
+
+.web:hover > div, .mobile:hover > div, .api:hover > div {
+    transform:scale(1.25);
+	transition:all 0.2s;
+}
+
+.web:hover > h3, .mobile:hover > h3, .api:hover > h3 {
+	opacity: 1;
+	transform: translateY(1em);
+    transition:all 0.2s;
+}
+
+.contact-me > div:hover {
+    transform:scale(1.25);
+	transition:all 0.2s;
+}
