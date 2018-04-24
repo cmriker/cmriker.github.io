@@ -35,17 +35,14 @@ h3 {
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row-reverse;
     height: 100vh;
 }
 
 #hello {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: flex-end;
 	height: 100%;
-    min-width: 40%;
+    margin: 0 10%;
 }
 
 #hello h1 {
@@ -56,11 +53,12 @@ h3 {
     width: min-content;
 }
 
-#about {
+#about, #contact {
 	display: flex;
     flex-direction: column;
-	height: 100vh;
 	align-items: center;
+    justify-content: space-around;
+	height: 100vh;
 	background: #fff;
 }
 
@@ -92,8 +90,9 @@ h3 {
     display: flex;
     min-height: 200px;
     height: 200px;
+    min-width: 200px;
     width: 200px;
-    border-radius: 200px;
+    border-radius: 50%;
     background: #3a3a3a;
     font-size: 3em;
     color: #fff;
@@ -107,16 +106,15 @@ h3 {
     text-align: center;
 }
 
+.skills h3 {
+    width: 75%;
+}
+
 i {
     margin: auto;
 }
 
 #contact {
-    display: flex;
-    flex-direction: column;
-	align-items: center;
-    justify-content: space-between;   
-    height: 100vh;
     background: #3a3a3a;
     color: #fff;
 }
@@ -126,7 +124,7 @@ i {
 }
 
 .contact-form > h1 {
-    font-size: 3em;
+    font-size: 8vh;
     margin: 1em 0;
 }
 
@@ -142,7 +140,7 @@ i {
     height: 100px;
     width: 100px;
     margin: 0 1rem;
-    border-radius: 100px;
+    border-radius: 50%;
     background: #fff;
     font-size: 2em;
     color: #3a3a3a;

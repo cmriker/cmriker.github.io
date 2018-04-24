@@ -1,0 +1,125 @@
+
+@media (orientation: portrait) {
+    #landing {
+        background-position: left;
+    }
+    
+    #hello {
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+    }
+    
+    polygon {
+        stroke: #fff;
+    }
+    
+    .scroll-link, .scroll-link:visited {
+        color: #fff;
+        font-weight: 300;
+        text-decoration: none;
+    }
+    
+    .about-me h1 {
+        font-size: 11vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-me h1 {
+        font-size: 11vh;
+    }
+    
+    .skills h3 {
+        font-size: 2.67vh;
+    }
+}
+
+@media (max-width: 425px) {
+    .about-me h1 {
+        font-size: 8vh;
+    }
+    
+    .about-me h3 {
+        font-size: 3vh;
+    }
+    
+    .skills {
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 2em 1em;
+        width: 100vw;
+    }
+    
+    .web, .mobile, .api {
+        flex-basis: auto;
+        align-content: center;
+        margin: 1rem 0;
+    }
+    
+    .web, .api {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .mobile {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+
+    .skills section div {
+        min-height: 125px;
+        height: 125px;
+        min-width: 125px;
+        width: 125px;
+        font-size: 1.875em;
+    }
+    
+    .skills h3 {
+        font-size: 2.5vh;
+    }
+    
+    .web h3, .api h3 {
+        margin: 0 0 0 1rem;
+    }
+    
+    .mobile h3 {
+        margin: 0 1rem 0 0;
+    }
+    
+    .contact-me {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    
+    .contact-form h1 {
+        font-size: 6vh;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-me h1 {
+        font-size: 6vh;
+    }
+    
+    .contact-me {
+        width: 75%;
+    }
+    
+    .contact-me > div {
+        height: 62.5px;
+        width: 62.5px;
+        margin: 0 0.625rem;
+        font-size: 1.25em;
+    }
+    
+    .contact-form h1 {
+        font-size: 4vh;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact-me {
+        width: 100%;
+    }
+}
