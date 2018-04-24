@@ -1,6 +1,6 @@
 .scroll-arrow-link {
 	display: block;
-	transform: translateY(1em);
+	transform: translateY(.75em);
 	transition:all 0.2s;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .scroll-arrow-link:hover {
-	font-size: 1.2em;
+	transform: scale(1.1) translateY(0.9em);    
 	transition:all 0.2s;
 }
 
@@ -43,4 +43,20 @@
 .contact-me > div:hover {
     transform:scale(1.25);
 	transition:all 0.2s;
+}
+
+@media (any-pointer: coarse) {
+    .scroll-arrow-link {
+        transform: translateY(0.9em);
+    }
+    
+    .scroll-down-container > a:not(.scroll-arrow-link) {
+        opacity: 1;
+        transform: translateY(-3.5em);
+    }
+    
+    .web-text, .mobile-text, .api-text {
+        opacity: 1;
+        transform: translateY(1em);
+    }
 }
