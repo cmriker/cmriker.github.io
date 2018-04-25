@@ -6,8 +6,6 @@
     
     #hello {
         justify-content: center;
-        align-content: center;
-        margin: auto;
     }
     
     polygon {
@@ -25,6 +23,30 @@
     }
 }
 
+@media (any-pointer: coarse) {
+    #landing {
+        background-attachment: scroll;
+    }
+    
+    #hello h1 {
+        margin: 0.5em 0;
+    }
+    
+    .scroll-arrow-link {
+        transform: translateY(0.9em);
+    }
+    
+    .scroll-down-container > a:not(.scroll-arrow-link) {
+        opacity: 1;
+        transform: translateY(-3.5em);
+    }
+    
+    .web-text, .mobile-text, .api-text {
+        opacity: 1;
+        transform: translateY(1em);
+    }
+}
+
 @media (max-width: 768px) {
     .about-me h1 {
         font-size: 11vh;
@@ -36,6 +58,10 @@
 }
 
 @media (max-width: 425px) {
+    #landing {
+        background-position: 20%;     
+    }
+    
     .about-me h1 {
         font-size: 8vh;
     }
@@ -55,6 +81,10 @@
         flex-basis: auto;
         align-content: center;
         margin: 1rem 0;
+    }
+    
+    .web-text, .mobile-text, .api-text {
+        transform: none;
     }
     
     .web, .api {
@@ -95,6 +125,10 @@
     .contact-form h1 {
         font-size: 6vh;
     }
+    
+    .contact-form h3 {
+        font-size: 2.5vh;
+    }
 }
 
 @media (max-width: 375px) {
@@ -116,6 +150,8 @@
     .contact-form h1 {
         font-size: 4vh;
     }
+    
+    .
 }
 
 @media (max-width: 320px) {

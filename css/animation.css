@@ -44,25 +44,3 @@
     transform:scale(1.25);
 	transition:all 0.2s;
 }
-
-@media (any-pointer: coarse) {
-    .scroll-arrow-link {
-        transform: translateY(0.9em);
-    }
-    
-    .scroll-down-container > a:not(.scroll-arrow-link) {
-        opacity: 1;
-        transform: translateY(-3.5em);
-    }
-    
-    .web-text, .mobile-text, .api-text {
-        opacity: 1;
-        transform: translateY(1em);
-    }
-}
-
-@media (max-width: 425px) {
-    .web-text, .mobile-text, .api-text {
-        transform: none;
-    }
-}
