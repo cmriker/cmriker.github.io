@@ -3,19 +3,14 @@
 	src: url("../fonts/spinwerad.ttf");
 }
 
-@font-face {
-  font-family: 'Montserrat';
-  src: local('Montserrat Thin'), local('Montserrat-Thin'),  url(https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900) format('woff2');
- }
-
 html {
 	scroll-behavior: smooth;
 }
 
 body {
-	font-family: 'montserrat', 'futura', sans-serif;
+	font-family: 'Quicksand', 'futura', sans-serif;
 	font-size: 24px;
-    font-weight: 100;
+    font-weight: 300;
 	color: #3a3a3a;
 	min-height: 100vh;
 	margin: 0;
@@ -26,7 +21,7 @@ h1 {
 }
 
 h3 {
-    font-weight: 100;
+    font-weight: 300;
 }
 
 #landing {
@@ -71,12 +66,12 @@ h3 {
 
 .about-me > h1 {
     font-size: 12vh;
-    margin: 0.25em;
+    margin: 0.25em 0 0 0;
 }
 
 .about-me > h3 {
-    font-size: 4vh;
-    margin: 0.25em;
+    font-size: 5vh;
+    margin: 0.15em 0;
 }
 
 .skills {
@@ -178,4 +173,5 @@ a, a:visited {
 
 a.scroll-link {
     font-size: 24px;
+    font-weight: 400;
 }
