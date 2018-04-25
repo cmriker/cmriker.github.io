@@ -1,3 +1,3 @@
 # colleenriker.com
 
-*a currently much-neglected personal site to showcase projects*
+Just a simple personal website for me, Colleen Riker, to showcase future work and express myself creatively. 
