@@ -29,12 +29,12 @@
 	transition:all 0.2s;
 }
 
-.web:hover > div, .mobile:hover > div, .api:hover > div {
+.web-icon:hover, .mobile-icon:hover, .api-icon:hover {
     transform:scale(1.25);
 	transition:all 0.2s;
 }
 
-.web:hover > h3, .mobile:hover > h3, .api:hover > h3 {
+.web-icon:hover + h3, .mobile-icon:hover + h3, .api-icon:hover + h3 {
 	opacity: 1;
 	transform: translateY(1em);
     transition:all 0.2s;
