@@ -50,6 +50,7 @@
 @media (max-width: 768px) {
     .about-me h1 {
         font-size: 11vh;
+        line-height: 1em;
     }
     
     .skills h3 {
@@ -150,8 +151,6 @@
     .contact-form h1 {
         font-size: 4vh;
     }
-    
-    .
 }
 
 @media (max-width: 320px) {
