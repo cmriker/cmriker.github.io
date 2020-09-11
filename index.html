@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Colleen Riker is a software engineer in Des Moines, Iowa with a passion for design. Available for collabortation on websites, apps, and cat photos.">
+        <meta name="description" content="Colleen Riker is a software engineer in Denver, Colorado with a passion for design. Available for collabortation on websites, apps, and cat photos.">
 
         <title>Colleen Riker - Design + Code</title>
 
@@ -19,99 +19,84 @@
 
     <body>
         <section id="landing">
-            <div id="hello">
-                <h1>
-                    he
+            <div id="container">
+                <h1 class="slide-in-right">
+                    hi,
                     <br>
-                    llo
+                    i'm
+                    <br>
+                    colleen
                 </h1>
-            </div>
-            <div class="scroll-down-container">
-                <a class="scroll-arrow-link" href="#about">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="112" width="112" viewBox="0 0 200 200">
-                        <polygon points="103 139, 53 54, 153 54" fill="none" stroke="#3a3a3a" stroke-width="4"></polygon>
-                        <polygon points="103 168, 53 83, 153 83" fill="none" stroke="#3a3a3a" stroke-width="4"></polygon>
-                    </svg>
-                </a>    
-                <a class="scroll-link" href="#about">scroll down</a>
-            </div>
-        </section>
-        
-        <section id="about">
-            <section class="about-me">
-                <h1>I'm Colleen Riker.</h1>
-                <h3>computer engineer</h3>
-                <h3>designer</h3>
-                <h3>coffee enthusiast</h3>
-            </section>
-            <section class="skills">
-                <section class="web">
-                    <div class="web-icon">
-                        <i class="fas fa-desktop"></i>
-                    </div>
-                    <h3 class="web-text">
-                        I can create custom websites,
-                        from design to development
-                    </h3>
-                </section>
                 
-                <section class="mobile">
-                    <div class="mobile-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3 class="mobile-text">
-                        I can optimize websites for mobile
-                        or build native mobile apps
-                    </h3> 
-                </section>
+                <nav id="content">
+                    <ol>
+                        <li class="nav-link" id="about-button">
+                            <input checked type="radio" value="about" name="nav" id="about-input">
+                            <label for="about-input">about</label>
+                            
+                            <section id="about">
+                                <section class="about-me">
+                                    <p class="fade-in-bottom-1">🏔️ I'm a full-stack software engineer based in Denver, Colorado.</p>
+                                    <p class="fade-in-bottom-2">🖥️ Currently I'm a backend engineer at <a href="https://buffer.com">Buffer</a>, where I work with some tools & frameworks you're familiar with like Kubernetes, Docker, MongoDB, Node.JS, and more recently GraphQL.</p>
+                                    <p class="fade-in-bottom-3">💚 I'm open to collaborating part-time on front-end and design-related projects.</p>
+                                    <p class="fade-in-bottom-4">⛔ I'm not looking for full-time opporunities at this time.</p>
+                                    <p class="fade-in-bottom-5">☕ When I'm not working, I'm either practicing my barista skills, making macarons, playing video games, or spending time with my partner & our cats. </p>
+                                    <br>
+                                    <br>
+                                </section>
+                            </section>
+                        </li>
+                        
+                        <li class="nav-link" id="resume-button">
+                            <input type="radio" value="resume" name="nav" id="resume-input">
+                            <label for="resume-input">resume</label>
+                            
+                            <section id="resume">
+                                <a href="files/Colleen%20Riker-Resume.pdf" target="_blank">
+                                    <img src="img/resume.jpg" alt="Current copy of my resumse available to download here">
+                                </a>
+                            </section>
+                        </li>
+                        
+                        <li class="nav-link" id="contact-button">
+                            <input type="radio" value="contact" name="nav" id="contact-input">
+                            <label for="contact-input">contact</label>
+                            
+                            <section id="contact">
+                                <section class="contact-me">
+                                    <form class="contact-form" method="GET" action="mailto:hello@colleenriker.com">
+                                        <label for="name">Name</label>
+                                        <input required name="subject" id="name" type="text" placeholder="Name"/>
+                                        <label for="project">Project Details</label>
+                                        <textarea required name="body" id="project" placeholder="Tell me about your next big idea..."></textarea>
+                                        <button type="submit">Send <i class="fa fa-paper-plane"></i></button>
+                                    </form>
+                                </section>
+                            </section>
+                        </li>
+                    </ol>
+                </nav>
                 
-                <section class="api">
-                    <div class="api-icon">
-                        <i class="fas fa-terminal"></i>
-                    </div>
-                    <h3 class="api-text">
-                        I can design an API, a database 
-                        schema, or a CI/CD pipeline
-                    </h3>
-                </section>
-            </section>
-        </section>
-        
-        <section id="contact">
-            <section class="contact-form">
-                <h1>Let's work together.</h1>
-                <h3>send me a note</h3>
-                <h3>follow me</h3>
-                <h3>like my cat photos</h3>
-            </section>
-            <section class="contact-me">
-                <div>
-                    <a href="https://www.linkedin.com/in/colleen-riker" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/cmriker/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-                <div>
-                    <a href="mailto:hello@colleenriker.com" target="_blank">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://twitter.com/cmriker" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://github.com/cmriker" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </section>
-            <p>&copy; 2018 Colleen Riker</p>
+                <footer>
+                    <section id="icons">
+                        <div>
+                            <a href="https://github.com/cmriker" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/cmriker/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/cmriker" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </section>
+                </footer>
+            </div>
         </section>
     </body>
 </html>
