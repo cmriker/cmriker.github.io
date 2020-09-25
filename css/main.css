@@ -9,7 +9,7 @@ html {
 
 body {
 	font-family: 'Quicksand', 'futura', sans-serif;
-	font-size: 24px;
+	font-size: 1.5vw;
     font-weight: 300;
 	color: #3a3a3a;
 	min-height: 100vh;
@@ -23,6 +23,29 @@ h1 {
 
 h3 {
     font-weight: 300;
+}
+
+#landing {
+    background-color: #3a3a3a;
+    height: 100vh;
+}
+
+#container {
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 0 0 50%;
+	height: 100%;
+    width: 50%;
+}
+
+#container > h1 {
+    font-size: 18vh;
+    font-family: spinwerad;
+    color: #fff;
+    width: min-content;
+    text-align: end;
+    position: fixed;
+    right: 49%;
 }
 
 nav {
@@ -55,36 +78,6 @@ input:checked + label {
     border: 1px solid #3a3a3a;
     border-radius: 3px;
     color: #fff;
-}
-
-#landing {
-/*
-    background-image: url(../img/landing_page_alt.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: bottom 0 right 40vw;
-    background-repeat: no-repeat;
-*/
-    background-color: #3a3a3a;
-    height: 100vh;
-}
-
-#container {
-    background-color: #fff;
-    display: inline-block;
-    margin: 0 0 0 50%;
-	height: 100%;
-    width: 50%;
-}
-
-#container > h1 {
-    font-size: 18vh;
-    font-family: spinwerad;
-    color: #fff;
-    width: min-content;
-    text-align: end;
-    position: fixed;
-    right: 49%;
 }
 
 #about, #resume, #contact {

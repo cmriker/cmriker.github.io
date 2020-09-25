@@ -1,25 +1,48 @@
-
 @media (orientation: portrait) {
-    #landing {
-        background-position: left;
+    body {
+        font-size: 2vh;
     }
     
-    #hello {
-        justify-content: center;
+   #landing {
+        background-color: #3a3a3a;
+        width: 100vw;
     }
     
-    polygon {
-        stroke: #fff;
+    #content {
+        margin: 0;
     }
-    
-    .scroll-link, .scroll-link:visited {
+
+    #container {
+        background-color: #fff;
+        display: inline-block;
+        position: fixed;
+        margin: 0;    
+        top: 50%;
+        height: 50%;
+        width: 100%;
+    }
+
+    #container > h1 {
+        font-size: 18vw;
+        font-family: spinwerad;
         color: #fff;
-        font-weight: 300;
-        text-decoration: none;
+        margin: 0;
+        width: 100%;
+        text-align: start;
+        position: fixed;
+        right: 0;
+        bottom: 45%;
     }
     
-    .about-me h1 {
-        font-size: 11vh;
+    #about {
+        width: 100vw;
+        position: absolute;
+        left: 10%;
+    }
+    
+    .about-me, .contact-me {
+        text-align: left;
+        margin: 0 15% 0 0;
     }
 }
 
