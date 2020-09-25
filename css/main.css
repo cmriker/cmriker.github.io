@@ -80,7 +80,7 @@ input:checked + label {
     color: #fff;
 }
 
-#about, #resume, #contact {
+#about, #work, #contact {
     visibility: collapse;
 	max-height: 80%;
     width: 50%;
@@ -94,27 +94,13 @@ input:checked + label {
     visibility: visible;
 }
 
-.about-me, .contact-me {
+.about-me, .contact-me, .resume-link {
     text-align: left;
     margin: 0 15%;
 }
 
-#resume-input:checked ~ #resume {
+#work-input:checked ~ #work {
     visibility: visible;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#resume img {
-    width: 100%;
-    border: 1px dashed #3a3a3a;
-}
-
-#resume a {
-    max-width: 66%;
-    border: none;
-    text-decoration: none;
 }
 
 #contact-input:checked ~ #contact {
@@ -140,19 +126,22 @@ input:checked + label {
 .contact-form > button:active {
     color: #3a3a3a;
     background-color: #fff;
-    width: 30%;
-    border-radius: 3px;
+}
+
+form.contact-form {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
 .contact-form > input[type=text], .contact-form > textarea, .contact-form > button {
     font-family: 'Quicksand', 'futura', sans-serif;
-	font-size: 24px;
-    padding: 8px;
-    margin: 12px 0;
+	font-size: 1.5vw;
+    padding: 0.5em;
+    margin: 0 0 1em 0;
 }
 
 .contact-form > textarea {
-    height: 250px;
+    height: 10em;
     resize: none;
 }
 

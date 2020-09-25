@@ -34,150 +34,29 @@
         bottom: 45%;
     }
     
-    #about {
+    #about, #work, #contact {
         width: 100vw;
         position: absolute;
         left: 10%;
     }
     
-    .about-me, .contact-me {
+    .about-me, .contact-me, .resume-link {
         text-align: left;
         margin: 0 15% 0 0;
     }
-}
 
-@media (any-pointer: coarse) {
-    #landing {
-        background-attachment: scroll;
-    }
-    
-    #hello h1 {
-        margin: 0.5em 0;
-    }
-    
-    .scroll-arrow-link {
-        transform: translateY(0.9em);
-    }
-    
-    .scroll-down-container > a:not(.scroll-arrow-link) {
-        opacity: 1;
-        transform: translateY(-3.5em);
-    }
-    
-    .web-text, .mobile-text, .api-text {
-        opacity: 1;
-        transform: translateY(1em);
-    }
-}
-
-@media (max-width: 768px) {
-    .about-me h1 {
-        font-size: 11vh;
-        line-height: 1em;
-    }
-    
-    .skills h3 {
-        font-size: 2.67vh;
+    .contact-form > input[type=text], .contact-form > textarea, .contact-form > button {
+        font-size: 2vh;
     }
 }
 
 @media (max-width: 425px) {
-    #landing {
-        background-position: 20%;     
-    }
-    
-    .about-me h1 {
-        font-size: 8vh;
-    }
-    
-    .about-me h3 {
-        font-size: 4vh;
-    }
-    
-    .skills {
-        flex-direction: column;
-        box-sizing: border-box;
-        padding: 2em 1em;
-        width: 100vw;
-    }
-    
-    .web, .mobile, .api {
-        flex-basis: auto;
-        align-content: center;
-        margin: 1rem 0;
-    }
-    
-    .web-text, .mobile-text, .api-text {
-        transform: none;
-    }
-    
-    .web, .api {
-        flex-direction: row;
-        text-align: left;
-    }
-    
-    .mobile {
-        flex-direction: row-reverse;
-        text-align: right;
-    }
+    body {
+        font-size: 1.75vh;
+    }   
 
-    .skills section div {
-        min-height: 125px;
-        height: 125px;
-        min-width: 125px;
-        width: 125px;
-        font-size: 1.875em;
-    }
-    
-    .skills h3 {
-        font-size: 2.5vh;
-    }
-    
-    .web h3, .api h3 {
-        margin: 0 0 0 1rem;
-    }
-    
-    .mobile h3 {
-        margin: 0 1rem 0 0;
-    }
-    
-    .contact-me {
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-    }
-    
-    .contact-form h1 {
-        font-size: 6vh;
-    }
-    
-    .contact-form h3 {
-        font-size: 2.5vh;
-    }
-}
-
-@media (max-width: 375px) {
-    .about-me h1 {
-        font-size: 6vh;
-    }
-    
-    .contact-me {
-        width: 75%;
-    }
-    
-    .contact-me > div {
-        height: 62.5px;
-        width: 62.5px;
-        margin: 0 0.625rem;
-        font-size: 1.25em;
-    }
-    
-    .contact-form h1 {
-        font-size: 4vh;
-    }
-}
-
-@media (max-width: 320px) {
-    .contact-me {
-        width: 100%;
+    #container > h1 {
+        right: 0;
+        bottom: 47%;
     }
 }
