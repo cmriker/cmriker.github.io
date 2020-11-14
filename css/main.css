@@ -112,9 +112,10 @@ input:checked + label {
     flex-direction: column;
 }
 
-.contact-form label {
+.contact-form label, a > span {
     visibility: hidden;
     height: 0;
+    width: 0;
 }
 
 .contact-form > button {
@@ -196,9 +197,4 @@ a, a:visited {
 a.scroll-link {
     font-size: 24px;
     font-weight: 400;
-}
-
-a > span {
-    visibility: hidden;
-    width: 0;
 }
