@@ -52,7 +52,7 @@
 
 @media (max-width: 425px) {
     body {
-        font-size: 1.75vh;
+        font-size: max(1.75vh, 12px);
     }   
 
     #container > h1 {

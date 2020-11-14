@@ -112,8 +112,10 @@ input:checked + label {
     flex-direction: column;
 }
 
-.contact-form label {
-    display: none;
+.contact-form label, a > span {
+    visibility: hidden;
+    height: 0;
+    width: 0;
 }
 
 .contact-form > button {
