@@ -54,4 +54,8 @@
         right: 0;
         bottom: 47%;
     }
+
+    #landing {
+        position: fixed;
+    }
 }

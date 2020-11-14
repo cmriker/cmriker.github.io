@@ -29,6 +29,7 @@ h3 {
 #landing {
     background-color: #3a3a3a;
     height: 100vh;
+    width: 100vw;
 }
 
 #container {
