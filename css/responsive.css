@@ -1,61 +1,57 @@
 @media (orientation: portrait) {
-    body {
-        font-size: 2vh;
-    }
-    
-    #content {
-        margin: 0;
-    }
+  body {
+    font-size: 2vh;
+  }
 
-    #container {
-        background-color: #fff;
-        display: inline-block;
-        position: fixed;
-        margin: 0;    
-        top: 50%;
-        height: 50%;
-        width: 100%;
-    }
+  #container {
+    background-color: #fff;
+    display: inline-block;
+    position: fixed;
+    margin: 0;
+    top: 50%;
+    height: 50%;
+    width: 100%;
+  }
 
-    #container > h1 {
-        font-size: 18vw;
-        font-family: spinwerad;
-        color: #fff;
-        margin: 0;
-        width: 100%;
-        text-align: start;
-        position: fixed;
-        right: 0;
-        bottom: 45%;
-    }
-    
-    #about, #work, #contact {
-        width: 100vw;
-        position: absolute;
-        left: 10%;
-    }
-    
-    .about-me, .contact-me, .resume-link {
-        text-align: left;
-        margin: 0 15% 0 0;
-    }
-
-    .contact-form > input[type=text], .contact-form > textarea, .contact-form > button {
-        font-size: 2vh;
-    }
+  #container > h1 {
+    font-size: 18vw;
+    color: #fff;
+    margin: 0;
+    width: 100%;
+    text-align: start;
+    position: fixed;
+    right: 0;
+    bottom: 45%;
+  }
 }
 
 @media (max-width: 425px) {
-    body {
-        font-size: max(1.75vh, 12px);
-    }   
+  body {
+    font-size: max(1.75vh, 12px);
+  }
 
-    #container > h1 {
-        right: 0;
-        bottom: 47%;
-    }
+  #container > h1 {
+    right: 0;
+    bottom: 47%;
+  }
+}
 
-    #landing {
-        position: fixed;
-    }
+@media (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+
+  #container {
+    top: 40%;
+    height: 60%;
+  }
+
+  #container > h1 {
+    font-size: 56px;
+    bottom: 59%;
+  }
+
+  #content {
+    margin: 5% 10%;
+  }
 }
