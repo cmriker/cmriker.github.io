@@ -11,7 +11,7 @@ body {
   font-family: 'Quicksand', 'futura', sans-serif;
   font-size: 1.5vw;
   font-weight: 300;
-  color: #3a3a3a;
+  color: #6d907c;
   min-height: 100vh;
   min-width: 100vw;
   margin: 0;
@@ -22,11 +22,12 @@ h1 {
 }
 
 #content {
-  margin: 10%;
+    margin: 20% 10% 0 10%;
+
 }
 
 #landing {
-  background-color: #3a3a3a;
+  background-color: #6d907c;
   height: 100vh;
 }
 
@@ -39,12 +40,13 @@ h1 {
 }
 
 #container > h1 {
-  font-size: 18vh;
-  color: #fff;
-  width: min-content;
-  text-align: end;
-  position: fixed;
-  right: 49%;
+    font-size: 18vh;
+    color: #fff;
+    width: min-content;
+    text-align: end;
+    position: fixed;
+    right: 49%;
+
 }
 
 .acc-hidden {
@@ -60,52 +62,30 @@ h1 {
 }
 
 footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    text-align: right;
 }
 
-footer > p {
-  flex-grow: 1;
-  max-width: 80%;
-  text-align: right;
-  font-size: 1em;
-  margin: 12px;
+footer span {
+    font-size: 2.3em;
+    color: #6d907c;
+    margin: 0 12px 12px 0;
 }
 
-#icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  max-width: 100%;
-}
-
-footer div {
-  font-size: 2.3em;
-  color: #3a3a3a;
-  padding: 16px 8px;
-}
-
-footer div:last-child {
-  padding: 16px 16px 16px 8px;
-}
-
-#icons > div > a {
+#icons > span > a {
   width: 100%;
   height: 100%;
   text-decoration: none;
   border-bottom: none;
-  display: flex;
 }
 
 a, a:visited {
-  color: #3a3a3a;
+  color: #6d907c;
   text-decoration: none;
-  border-bottom: 1px dashed #3a3a3a;
+  border-bottom: 1px dashed #6d907c;
 }
 
 a.scroll-link {
