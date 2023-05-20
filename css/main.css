@@ -52,7 +52,7 @@ h1 {
 
 #container > h1 {
   background-color: #6d907c;
-  clip-path: circle(30% at 48% 62%);
+  clip-path: circle(30% at 49% 62%);
   text-align: center;
   font-size: 10vh;
   color: #fff;
@@ -60,7 +60,7 @@ h1 {
   height: 50%;
   position: fixed;
   bottom: 0;
-  right: 30%;
+  right: 33%;
   margin: 0;
   z-index: 2;
 
