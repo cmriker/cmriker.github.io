@@ -3,6 +3,10 @@
     font-size: 2vh;
   }
 
+  #portrait {
+    display: none;
+  }
+
   #container {
     background-color: #fff;
     display: inline-block;
@@ -14,6 +18,7 @@
   }
 
   #container > h1 {
+    clip-path: none;
     font-size: 18vw;
     color: #fff;
     margin: 0;
@@ -31,6 +36,7 @@
   }
 
   #container > h1 {
+    clip-path: none;
     right: 0;
     bottom: 47%;
   }
@@ -47,11 +53,20 @@
   }
 
   #container > h1 {
+    clip-path: none;
     font-size: 56px;
     bottom: 59%;
   }
 
   #content {
     margin: 5% 10%;
+  }
+}
+
+@media (min-wdith: 1920px) {
+  #portrait {
+    position: fixed;
+    left: -10%;
+    clip-path: circle(40vh at 50% 50%);
   }
 }

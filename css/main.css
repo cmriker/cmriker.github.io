@@ -15,6 +15,8 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   margin: 0;
+  overflow: hidden;
+
 }
 
 h1 {
@@ -22,30 +24,45 @@ h1 {
 }
 
 #content {
-    margin: 20% 10% 0 10%;
-
+  position: absolute;
+  background-color: white;
+  top: 10%;
+  padding: 0 1em;
+  border-radius: 2em;
+  z-index: 1;
 }
 
 #landing {
-  background-color: #6d907c;
   height: 100vh;
 }
 
 #container {
-  background-color: #fff;
   display: inline-block;
   margin: 0 0 0 50%;
   height: 100%;
   width: 50%;
 }
 
+#portrait {
+  position: fixed;
+  left: -30%;
+  clip-path: circle(50vh at 50% 50%);
+  z-index: 0;
+}
+
 #container > h1 {
-    font-size: 18vh;
-    color: #fff;
-    width: min-content;
-    text-align: end;
-    position: fixed;
-    right: 49%;
+  background-color: #6d907c;
+  clip-path: circle(30% at 48% 62%);
+  text-align: center;
+  font-size: 10vh;
+  color: #fff;
+  width: 50%;
+  height: 50%;
+  position: fixed;
+  bottom: 0;
+  right: 30%;
+  margin: 0;
+  z-index: 2;
 
 }
 
@@ -62,17 +79,17 @@ h1 {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 50%;
-    text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  text-align: right;
 }
 
 footer span {
-    font-size: 2.3em;
-    color: #6d907c;
-    margin: 0 12px 12px 0;
+  font-size: 2.3em;
+  color: #6d907c;
+  margin: 0 12px 12px 0;
 }
 
 #icons > span > a {
