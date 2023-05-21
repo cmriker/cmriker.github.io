@@ -64,7 +64,7 @@
   }
 }
 
-@media (min-wdith: 1920px) {
+@media (min-width: 1920px) {
   #portrait {
     position: fixed;
     left: -10%;
