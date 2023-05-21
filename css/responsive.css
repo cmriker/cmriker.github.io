@@ -83,8 +83,14 @@
 @media (min-width: 1023px) {
   #portrait {
     height: 100%;
-    left: -38vw;
-    bottom: -22vh;
+    left: -35vw !important;
+    bottom: -22vh !important;
+  }
+  
+  #container > h1 {
+    clip-path: circle(33% at 50% 45%);
+    bottom: 2vh;
+    right: 22vw;
   }
 }
 
