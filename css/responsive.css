@@ -7,6 +7,10 @@
     display: none;
   }
 
+  #landing {
+    background-color: #6d907c;    
+  }
+    
   #container {
     background-color: #fff;
     display: inline-block;
@@ -18,7 +22,7 @@
   }
 
   #container > h1 {
-    clip-path: none;
+    clip-path: none !important;
     font-size: 18vw;
     color: #fff;
     margin: 0;
@@ -26,8 +30,8 @@
     height: auto;
     text-align: start;
     position: fixed;
-    right: 0;
-    bottom: 45%;
+    right: 0 !important;
+    bottom: 45% !important;
   }
 }
 
@@ -39,7 +43,7 @@
   #container > h1 {
     clip-path: none;
     right: 0;
-    bottom: 47%;
+    bottom: 47% !important;
   }
 }
 
@@ -56,18 +60,38 @@
   #container > h1 {
     clip-path: none;
     font-size: 56px;
-    bottom: 59%;
-  }
-
-  #content {
-    margin: 5% 10%;
+    bottom: 59% !important;
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 800px) and (max-width: 1365px) {
+  #portrait {
+    left: -62%;
+  }
+    
+  #content {
+    top: 5%;
+  }
+    
+  #container > h1 {
+    clip-path: circle(37% at 50% 56%);
+    bottom: 3vh;
+    right: 22vw;
+  }
+}
+
+@media (min-width: 1023px) {
+  #portrait {
+    height: 100%;
+    left: -38vw;
+    bottom: -22vh;
+  }
+}
+
+@media (min-width: 1366px) {
   #portrait {
     position: fixed;
-    left: -10%;
-    clip-path: circle(40vh at 50% 50%);
+    left: -20%;
+    clip-path: circle(50vh at 50% 50%);
   }
 }
