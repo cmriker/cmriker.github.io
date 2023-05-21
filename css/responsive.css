@@ -97,7 +97,15 @@
 @media (min-width: 1366px) {
   #portrait {
     position: fixed;
-    left: -20%;
+    left: -20% !important;
     clip-path: circle(50vh at 50% 50%);
+  }
+  #content {
+    top: 5%;
+  }
+  #container > h1 {
+    clip-path: circle(25% at 50% 45%);
+    bottom: 2vh;
+    right: 30vw;
   }
 }
